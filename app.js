@@ -64,3 +64,42 @@ console.log(typeof mySymbol);
 const today = new Date();
 console.log(today);
 console.log(typeof today);
+
+// Type Conversion
+let val = 2;
+console.log(typeof val);
+val = String(10+5);
+console.log(val);
+console.log(typeof val);
+
+val = Number("5");
+console.log(val);
+val = Number(true);
+console.log(val);
+val = Number(false);
+console.log(val);
+val = Number(null);
+console.log(val);
+val = Number("i am a string");
+console.log(val);
+val = Number([1,2,3]);
+console.log(val);
+
+/*
+.length can be used on stings to get their length
+.toString() converts a type to a string
+.toFixed() can be used on numbers to tell how many decimals are allowed
+NaN stands for not a number
+parseInt("5"); for integer 
+parseFloat("5.00"); for decimals
+*/
+
+// Type Co-hersion - is when javascript does the type conversion, example when adding two varibales. example: a number and a string (the output will be a string), number and a number will give a number
+let one = 1;
+let two = 2;
+sum = one + two;
+console.log(typeof sum);
+
+two = "two";
+sum = one + two;
+console.log(typeof sum);
