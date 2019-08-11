@@ -140,6 +140,64 @@ print(Math.random());
 print(Math.random() * 100+1); 
 print(Math.floor(Math.random() * 100+1)); //return a whole number between 1 & 100
 
+// String Methods and Concatenation
+let firstName = "Navjot Singh";
+let lastName = "Virk";
+
+let fullName;
+
+// Concatenation
+fullName = firstName+" "+lastName;
+print(fullName);
+
+//Append
+fullName = "Jashan ";
+fullName += "Deep";
+print(fullName);
+
+//Escaping
+let sentence = 'That\'s awesome website';
+print(sentence);
+
+// String properties and methods
+print(sentence.length);
+
+//concat
+fullName = firstName.concat(" ", lastName);
+print(fullName);
+
+//change case
+print(fullName.toLowerCase());
+print(fullName.toUpperCase());
+
+//get a charater at an index in a string
+print(firstName[2]); // this will print v (Navjot)
+
+//indexOf() return index of a character in a string
+print(firstName.indexOf("j"));
+print(sentence.lastIndexOf("e"));
+
+//charAt() - returns a charater at an index in a string
+print(firstName.charAt(5));
+
+//substring() - returns a substring from specified starting index to specified number of characters
+let shortName = firstName.substring(0,3);
+print(shortName);
+
+//slice() - similar to substring
+print(firstName.slice(0,3));
+print(firstName.slice(-3)); //get the last 3 characters
+
+//split() - used to split a string in an array
+let splitArray = sentence.split(" "); //in this case we are spilting at space, we can split at a comma or a character
+print(splitArray);
+
+//replace() - used to replace text within a string 
+print(firstName.replace("Navjot", "Jota"));
+
+//includes() - returns a boolean true/false based on if something is inside a string
+print(sentence.includes("awesome"));
+
 function print(input){
   console.log(input);
 }
