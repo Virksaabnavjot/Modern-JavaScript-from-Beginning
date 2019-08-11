@@ -103,3 +103,43 @@ console.log(typeof sum);
 two = "two";
 sum = one + two;
 console.log(typeof sum);
+
+// Numbers and Math Object
+//Operators (+, -, *, /, %)
+/*
+Math Object (has methods and properties since its an object)
+
+----Properties----
+Math.PI; - gives pi's value
+Math.E; - gives Eucler's Number
+
+----Methods----
+Math.round(); - rounds the number to nearest integer
+Math.ceil(); -  used to round upwards
+Math.floor(); - used to round downwards
+more below ...
+*/
+console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.round(3.7));
+console.log(Math.ceil(3.7));
+console.log(Math.floor(3.7));
+
+print(Math.sqrt(64)); // return square root of a number
+print(Math.abs(-23)); //return an absolute value of a number with regards to if it negative or positive
+print(Math.pow(11,3)); //returns the power of a number
+print(Math.min(10, 0.2, 3, -110)); // returns the smallest number from a provided set of numbers
+print(Math.max(10, 0.2, 3, -110));
+
+/* random returns a random decimal number, in most cases a whole number is needed in that case multiply random with the max number needed
+this will retun a number between 0 & max number, to get a number between 1 & max number, multiply random with max number +1
+example: if you need a random number between 0 and hundred
+Math.random() * 100+1 this will still return a decimal number so wrap it within Math.floor() wo get a whole number
+*/
+print(Math.random()); 
+print(Math.random() * 100+1); 
+print(Math.floor(Math.random() * 100+1)); //return a whole number between 1 & 100
+
+function print(input){
+  console.log(input);
+}
